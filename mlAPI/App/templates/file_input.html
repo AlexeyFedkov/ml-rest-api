@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="display: flex; justify-content: space-evenly">
+<form method="post" enctype="multipart/form-data" action="train">
+    <div>
+        <label for="train">Выберете файл для обучения</label>
+        <input type="file" id="train" name="file" style="display:block;margin: 16px 0">
+    </div>
+    <div>
+        <button>Обучить</button>
+    </div>
+</form>
+<form method="post" enctype="multipart/form-data" action="predict">
+    <div>
+        <label for="predict">Выберете файл для предсказания</label>
+        <input type="file" id="predict" name="file" style="display:block;margin: 16px 0">
+    </div>
+    <div>
+        <button>Предсказать</button>
+    </div>
+</form>
+</body>
+</html>
